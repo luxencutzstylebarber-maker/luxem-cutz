@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080807">
+  <title>LUXEM CUTZ | Style Barbería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="ambient one"></div>
+  <div class="ambient two"></div>
+
+  <section id="bienvenida" aria-label="Bienvenida a Luxem Cutz">
+    <div class="welcome-card">
+      <img class="logo-welcome" src="{{ url_for('static', filename='Logobarber.jpeg') }}" alt="Logo de Luxem Cutz">
+      <p class="eyebrow">Style Barbería</p>
+      <h1 class="brand-title">LUXEM<span>CUTZ</span></h1>
+      <div class="ornament" aria-hidden="true">✦</div>
+      <p class="welcome-subtitle">Estilo · Precisión · Elegancia</p>
+      <button class="gold-button enter-button" type="button" onclick="ingresar()">
+        <span>✦</span> Ingresar <span>→</span>
+      </button>
+    </div>
+  </section>
+
+  <main id="contenido">
+    <section class="main-card" aria-label="Redes y contacto de Luxem Cutz">
+      <p class="eyebrow">Bienvenido a</p>
+      <img class="main-logo" src="{{ url_for('static', filename='Logobarber.jpeg') }}" alt="Logo de Luxem Cutz">
+      <h2 class="main-heading">LUXEM CUTZ</h2>
+      <p class="main-caption">Tu estilo, nuestra precisión</p>
+      <div class="gold-divider"></div>
+
+      <nav class="links" aria-label="Enlaces de contacto">
+        <a class="social-link appointment" href="https://groomagendadirecto.groomteams.com/detalleEstablecimiento?establecimiento=KPGJerfOP9TnFPehZsIysfTcwXp1" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">📅</span>
+          <span class="link-copy"><strong>Agenda tu cita</strong><small>Reserva tu próximo corte</small></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/luxen.cutz9729" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">◎</span>
+          <span class="link-copy"><strong>Instagram</strong><small>Mira nuestros estilos y trabajos</small></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="social-link" href="https://www.tiktok.com/@luxem.cutz.style.barber" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">♪</span>
+          <span class="link-copy"><strong>TikTok</strong><small>Descubre nuestros videos</small></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="social-link" href="https://wa.me/message/F3WOCREHPWH7O1" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">✆</span>
+          <span class="link-copy"><strong>WhatsApp</strong><small>Escríbenos directamente</small></span>
+          <span class="link-arrow" aria-hidden="true">›</span>
+        </a>
+      </nav>
+
+      <footer class="footer">
+        <span class="footer-mark">✦</span>
+        LUXEM CUTZ <span>· STYLE BARBERÍA</span><br>
+        Gracias por tu visita
+      </footer>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
